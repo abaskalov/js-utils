@@ -1,6 +1,8 @@
 import Decimal from "decimal.js-light";
 
-export const getDecimal = (value: string | number | Decimal = 0): number => {
+export const getNumberFromAny = (
+  value: string | number | Decimal = 0
+): number => {
   try {
     return new Decimal(value).abs().toNumber();
   } catch (e) {}
