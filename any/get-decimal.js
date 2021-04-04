@@ -7,6 +7,10 @@ exports.getDecimal = void 0;
 var decimal_js_light_1 = __importDefault(require("decimal.js-light"));
 var getDecimal = function (value) {
     if (value === void 0) { value = 0; }
-    return new decimal_js_light_1.default(value).abs().toNumber();
+    try {
+        return new decimal_js_light_1.default(value).abs().toNumber();
+    }
+    catch (e) { }
+    return 0;
 };
 exports.getDecimal = getDecimal;
