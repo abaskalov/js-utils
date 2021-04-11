@@ -1,1 +1,1 @@
-export declare const firstWordBold: (s?: string) => string;
+export declare const firstWordBold: (s?: string, strict?: boolean) => string;
