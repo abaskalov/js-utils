@@ -1,4 +1,4 @@
-export declare const range: ({ start, end, step, reverse, }: {
+export declare const getNumberRangeArray: ({ start, end, step, reverse, }: {
     start?: number | undefined;
     end: number;
     step?: number | undefined;

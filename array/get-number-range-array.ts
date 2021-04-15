@@ -1,4 +1,4 @@
-export const range = ({
+export const getNumberRangeArray = ({
   start = 1,
   end,
   step = 1,
