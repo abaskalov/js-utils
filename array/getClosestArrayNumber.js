@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getClosestMNumber = void 0;
-var getClosestMNumber = function (arr, num) {
+exports.getClosestArrayNumber = void 0;
+var getClosestArrayNumber = function (arr, num) {
     return (arr.reduce(function (acc, val) {
         if (Math.abs(val - num) < Math.abs(acc)) {
             return val - num;
@@ -11,4 +11,4 @@ var getClosestMNumber = function (arr, num) {
         }
     }, Infinity) + num);
 };
-exports.getClosestMNumber = getClosestMNumber;
+exports.getClosestArrayNumber = getClosestArrayNumber;

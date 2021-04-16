@@ -1,4 +1,4 @@
-export const arrayMove = (
+export const arrayMoveElement = (
   arr: any[],
   oldIndex: number,
   newIndex: number

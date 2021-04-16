@@ -1,7 +1,7 @@
 import Decimal from "decimal.js-light";
-import { trimEnd } from "../string/trim-end";
+import { trimEnd } from "../string/trimEnd";
 
-export const getFullString = (number: number = 0): string => {
+export const getFullStringFromNumber = (number: number = 0): string => {
   const toStringVal = number.toString();
   return /-/.test(toStringVal)
     ? trimEnd(new Decimal(toStringVal).toFixed(20).toString(), "0.,")

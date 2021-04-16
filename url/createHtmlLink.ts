@@ -1,4 +1,4 @@
-import { getHostname } from "../string/get-hostname";
+import { getHostname } from "../string/getHostname";
 
 export const createHtmlLink = ({
   url,

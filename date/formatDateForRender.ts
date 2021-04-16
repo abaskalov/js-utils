@@ -1,8 +1,8 @@
 import { DateFormatEnum } from "./DateFormatEnum";
 import { DateFormatOptionsInterface } from "./DateFormatOptionsInterface";
-import { parseDateFromIsoString } from "./parse-date-from-iso-string";
-import { convertDateToStringByTz } from "./convert-date-to-string-by-tz";
-import { splitDateString } from "./split-date-string";
+import { parseDateFromIsoString } from "./parseDateFromIsoString";
+import { convertDateToStringByTz } from "./convertDateToStringByTz";
+import { splitDateString } from "./splitDateString";
 
 export const formatDateForRender = (
   date: string,

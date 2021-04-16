@@ -1,7 +1,7 @@
-import { convertDateToStringByTz } from "./convert-date-to-string-by-tz";
-import { splitDateString } from "./split-date-string";
-import { parseDateFromInputString } from "./parse-date-from-input-string";
-import { changeTz } from "./change-tz";
+import { convertDateToStringByTz } from "./convertDateToStringByTz";
+import { splitDateString } from "./splitDateString";
+import { parseDateFromInputString } from "./parseDateFromInputString";
+import { changeTz } from "./changeTz";
 
 export const formatDateForSave = (date: string, tz: string): string => {
   const dateObject = parseDateFromInputString(date);

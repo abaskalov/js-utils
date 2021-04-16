@@ -1,4 +1,4 @@
-export const detectTZ = (): string =>
+export const detectTz = (): string =>
   (Intl &&
     Intl.DateTimeFormat &&
     Intl.DateTimeFormat().resolvedOptions &&
