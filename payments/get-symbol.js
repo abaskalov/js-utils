@@ -8,6 +8,8 @@ exports.symbols = {
     PLN: "zł",
     EUR: "€",
     CZK: "Kč",
+    USDTOmni: "USDT",
+    USDTERC20: "USDT",
 };
 var getSymbol = function (currency) {
     return exports.symbols[currency] || currency;
