@@ -1,1 +1,1 @@
-export const isUsd = (ps: string): boolean => !!ps.match(/usd/i);
+export const isUsd = (ps: string = ""): boolean => !!ps.match(/usd/i);
