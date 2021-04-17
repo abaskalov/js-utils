@@ -1,1 +1,1 @@
-export declare const isUsd: (ps: string) => boolean;
+export declare const isUsd: (ps?: string) => boolean;
