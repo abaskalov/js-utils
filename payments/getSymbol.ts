@@ -5,8 +5,6 @@ export const symbols: { [key: string]: string } = {
   PLN: "zł",
   EUR: "€",
   CZK: "Kč",
-  USDTOmni: "USDT",
-  USDTERC20: "USDT",
 };
-export const getSymbol = (currency: string): string =>
-  symbols[currency] || currency;
+export const getSymbol = (currency: string = ""): string =>
+  !!currency.match(/usdt/i) ? "USDT" : symbols[currency] || currency;

@@ -8,10 +8,9 @@ exports.symbols = {
     PLN: "zł",
     EUR: "€",
     CZK: "Kč",
-    USDTOmni: "USDT",
-    USDTERC20: "USDT",
 };
 var getSymbol = function (currency) {
-    return exports.symbols[currency] || currency;
+    if (currency === void 0) { currency = ""; }
+    return !!currency.match(/usdt/i) ? "USDT" : exports.symbols[currency] || currency;
 };
 exports.getSymbol = getSymbol;
