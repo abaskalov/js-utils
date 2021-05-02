@@ -21,6 +21,10 @@ export const splitDateString = (
 
   const splitDate: string[] = date.split(" ");
 
+  if (splitDate.length < 2) {
+    return falsyValue;
+  }
+
   const time = splitDate[1];
   const hms = time.split(":");
 
