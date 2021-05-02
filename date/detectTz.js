@@ -2,10 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.detectTz = void 0;
 var detectTz = function () {
-    return (Intl &&
-        Intl.DateTimeFormat &&
-        Intl.DateTimeFormat().resolvedOptions &&
-        Intl.DateTimeFormat().resolvedOptions().timeZone) ||
-        "UTC";
+    var tz = "UTC";
+    try {
+        tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    }
+    catch (e) { }
+    return tz;
 };
 exports.detectTz = detectTz;
