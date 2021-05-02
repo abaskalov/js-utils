@@ -11,6 +11,9 @@ var splitDateString = function (date) {
         year: "0",
     };
     var splitDate = date.split(" ");
+    if (splitDate.length < 2) {
+        return falsyValue;
+    }
     var time = splitDate[1];
     var hms = time.split(":");
     if (hms.length < 3) {
