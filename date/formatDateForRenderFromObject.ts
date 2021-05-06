@@ -1,19 +1,17 @@
 import { DateFormatEnum } from "./DateFormatEnum";
 import { DateFormatOptionsInterface } from "./DateFormatOptionsInterface";
-import { parseDateFromIsoString } from "./parseDateFromIsoString";
 import { convertDateToStringByTz } from "./convertDateToStringByTz";
 import { splitDateString } from "./splitDateString";
 
-export const formatDateForRender = (
-  date: string,
+export const formatDateForRenderFromObject = (
+  date: Date,
   { tz, format }: DateFormatOptionsInterface = {}
 ): string => {
   if (!date) {
     return "Invalid Date";
   }
 
-  const dateObject = parseDateFromIsoString(date);
-  const dateStringTz = convertDateToStringByTz(dateObject, tz);
+  const dateStringTz = convertDateToStringByTz(date, tz);
   const { hours, minutes, month, day, year } = splitDateString(dateStringTz);
 
   switch (format) {
