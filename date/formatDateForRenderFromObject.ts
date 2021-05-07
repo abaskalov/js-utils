@@ -7,7 +7,7 @@ export const formatDateForRenderFromObject = (
   date: Date,
   { tz, format }: DateFormatOptionsInterface = {}
 ): string => {
-  if (!date) {
+  if (!date || !(date instanceof Date)) {
     return "Invalid Date";
   }
 

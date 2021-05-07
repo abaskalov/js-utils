@@ -6,7 +6,7 @@ var convertDateToStringByTz_1 = require("./convertDateToStringByTz");
 var splitDateString_1 = require("./splitDateString");
 var formatDateForRenderFromObject = function (date, _a) {
     var _b = _a === void 0 ? {} : _a, tz = _b.tz, format = _b.format;
-    if (!date) {
+    if (!date || !(date instanceof Date)) {
         return "Invalid Date";
     }
     var dateStringTz = convertDateToStringByTz_1.convertDateToStringByTz(date, tz);

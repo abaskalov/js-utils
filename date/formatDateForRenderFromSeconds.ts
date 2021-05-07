@@ -5,7 +5,7 @@ export const formatDateForRenderFromSeconds = (
   seconds: number = 0,
   { tz, format }: DateFormatOptionsInterface = {}
 ): string => {
-  if (!seconds) {
+  if (!seconds || typeof seconds !== "number") {
     return "Invalid Date";
   }
 

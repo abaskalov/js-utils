@@ -6,7 +6,7 @@ export const formatDateForRenderFromString = (
   date: string,
   { tz, format }: DateFormatOptionsInterface = {}
 ): string => {
-  if (!date) {
+  if (!date || typeof date !== "string") {
     return "Invalid Date";
   }
 
