@@ -7,4 +7,4 @@ export const symbols: { [key: string]: string } = {
   CZK: "Kč",
 };
 export const getSymbol = (currency: string = ""): string =>
-  !!currency.match(/usdt/i) ? "USDT" : symbols[currency] || currency;
+  symbols[currency] || currency;

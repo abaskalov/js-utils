@@ -11,6 +11,6 @@ exports.symbols = {
 };
 var getSymbol = function (currency) {
     if (currency === void 0) { currency = ""; }
-    return !!currency.match(/usdt/i) ? "USDT" : exports.symbols[currency] || currency;
+    return exports.symbols[currency] || currency;
 };
 exports.getSymbol = getSymbol;
