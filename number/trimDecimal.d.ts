@@ -1,1 +1,1 @@
-export declare const trimDecimal: (v?: number, d?: number) => number;
+export declare const trimDecimal: (v?: number | string, d?: number) => number;
