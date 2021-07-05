@@ -8,6 +8,7 @@ exports.symbols = {
     PLN: "zł",
     EUR: "€",
     CZK: "Kč",
+    BRL: "R$",
 };
 var getSymbol = function (currency) {
     if (currency === void 0) { currency = ""; }

@@ -5,6 +5,7 @@ export const symbols: { [key: string]: string } = {
   PLN: "zł",
   EUR: "€",
   CZK: "Kč",
+  BRL: "R$",
 };
 export const getSymbol = (currency: string = ""): string =>
   symbols[currency] || currency;
