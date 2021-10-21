@@ -19,6 +19,8 @@ export const formatDateForRenderFromObject = (
       return `${day}.${month} ${hours}:${minutes}`;
     case DateFormatEnum.Date:
       return `${day}.${month}.${year}`;
+    case DateFormatEnum.Time:
+      return `${hours}:${minutes}`;
     default:
       return `${day}.${month}.${year} ${hours}:${minutes}`;
   }

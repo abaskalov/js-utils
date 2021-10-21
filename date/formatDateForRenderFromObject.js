@@ -16,6 +16,8 @@ var formatDateForRenderFromObject = function (date, _a) {
             return day + "." + month + " " + hours + ":" + minutes;
         case DateFormatEnum_1.DateFormatEnum.Date:
             return day + "." + month + "." + year;
+        case DateFormatEnum_1.DateFormatEnum.Time:
+            return hours + ":" + minutes;
         default:
             return day + "." + month + "." + year + " " + hours + ":" + minutes;
     }
