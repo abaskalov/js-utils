@@ -11,11 +11,11 @@ export const createHtmlLink = ({
 }: {
   url: string;
   inner: string;
-  domain: boolean;
-  blank: boolean;
-  noopener: boolean;
-  email: boolean;
-  phone: boolean;
+  domain?: boolean;
+  blank?: boolean;
+  noopener?: boolean;
+  email?: boolean;
+  phone?: boolean;
 }): string => {
   const prefix = email ? "mailto:" : phone ? "tel:" : "";
   return `<a ${noopener ? 'rel="noopener"' : ""} target="${
