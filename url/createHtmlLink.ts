@@ -10,7 +10,7 @@ export const createHtmlLink = ({
   phone = false,
 }: {
   url: string;
-  inner: string;
+  inner?: string;
   domain?: boolean;
   blank?: boolean;
   noopener?: boolean;
