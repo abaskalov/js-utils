@@ -4,6 +4,6 @@ exports.matchQueryArrayParam = void 0;
 var matchQueryArrayParam = function (s, p) {
     if (s === void 0) { s = ""; }
     if (p === void 0) { p = ""; }
-    return s.match(new RegExp("(" + p + ")\\[(\\w+)\\]\\[*(\\w+)*\\]*")) || [];
+    return s.match(new RegExp("(".concat(p, ")\\[(\\w+)\\]\\[*(\\w+)*\\]*"))) || [];
 };
 exports.matchQueryArrayParam = matchQueryArrayParam;

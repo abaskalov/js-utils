@@ -10,7 +10,7 @@ var getFullStringFromNumber = function (number) {
     if (number === void 0) { number = 0; }
     var toStringVal = number.toString();
     return /-/.test(toStringVal)
-        ? trimEnd_1.trimEnd(new decimal_js_light_1.default(toStringVal).toFixed(20).toString(), "0.,")
+        ? (0, trimEnd_1.trimEnd)(new decimal_js_light_1.default(toStringVal).toFixed(20).toString(), "0.,")
         : toStringVal;
 };
 exports.getFullStringFromNumber = getFullStringFromNumber;

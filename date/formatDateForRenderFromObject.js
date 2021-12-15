@@ -9,17 +9,17 @@ var formatDateForRenderFromObject = function (date, _a) {
     if (!date || !(date instanceof Date)) {
         return "Invalid Date";
     }
-    var dateStringTz = convertDateToStringByTz_1.convertDateToStringByTz(date, tz);
-    var _c = splitDateString_1.splitDateString(dateStringTz), hours = _c.hours, minutes = _c.minutes, month = _c.month, day = _c.day, year = _c.year;
+    var dateStringTz = (0, convertDateToStringByTz_1.convertDateToStringByTz)(date, tz);
+    var _c = (0, splitDateString_1.splitDateString)(dateStringTz), hours = _c.hours, minutes = _c.minutes, month = _c.month, day = _c.day, year = _c.year;
     switch (format) {
         case DateFormatEnum_1.DateFormatEnum.Short:
-            return day + "." + month + " " + hours + ":" + minutes;
+            return "".concat(day, ".").concat(month, " ").concat(hours, ":").concat(minutes);
         case DateFormatEnum_1.DateFormatEnum.Date:
-            return day + "." + month + "." + year;
+            return "".concat(day, ".").concat(month, ".").concat(year);
         case DateFormatEnum_1.DateFormatEnum.Time:
-            return hours + ":" + minutes;
+            return "".concat(hours, ":").concat(minutes);
         default:
-            return day + "." + month + "." + year + " " + hours + ":" + minutes;
+            return "".concat(day, ".").concat(month, ".").concat(year, " ").concat(hours, ":").concat(minutes);
     }
 };
 exports.formatDateForRenderFromObject = formatDateForRenderFromObject;

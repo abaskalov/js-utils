@@ -8,7 +8,7 @@ var formatDateForRenderFromSeconds = function (seconds, _a) {
     if (!seconds || typeof seconds !== "number") {
         return "Invalid Date";
     }
-    return formatDateForRenderFromObject_1.formatDateForRenderFromObject(new Date(seconds * 1000), {
+    return (0, formatDateForRenderFromObject_1.formatDateForRenderFromObject)(new Date(seconds * 1000), {
         tz: tz,
         format: format,
     });

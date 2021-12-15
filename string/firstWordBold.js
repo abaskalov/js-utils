@@ -7,7 +7,7 @@ var firstWordBold = function (s, strict) {
     var split = s.split(" ");
     if (split.length >= 1) {
         var start = split.splice(0, split[0].length <= 3 && split.length > 1 && !strict ? 2 : 1);
-        return "<b>" + start.join(" ") + "</b> " + split.join(" ");
+        return "<b>".concat(start.join(" "), "</b> ").concat(split.join(" "));
     }
     return s;
 };

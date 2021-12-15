@@ -8,7 +8,7 @@ var formatDateForRenderFromString = function (date, _a) {
     if (!date || typeof date !== "string") {
         return "Invalid Date";
     }
-    return formatDateForRenderFromObject_1.formatDateForRenderFromObject(parseDateFromIsoString_1.parseDateFromIsoString(date), {
+    return (0, formatDateForRenderFromObject_1.formatDateForRenderFromObject)((0, parseDateFromIsoString_1.parseDateFromIsoString)(date), {
         tz: tz,
         format: format,
     });
